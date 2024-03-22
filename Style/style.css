@@ -1,0 +1,229 @@
+:root {
+  /* Cores */
+  --roxo: #3c184e;
+  --roxo-hover: #290f36;
+  --roxo-sombra: #1f26875e;
+  --branco: #ffffff;
+  --branco-opaco: #ffffffc4;
+  --branco-sombra: #ffffc4;
+  --preto-sombra: #0000005c;
+  /* Fonte */
+  --fonte: sans-serif;
+}
+
+body {
+  font-family: var(--fonte);
+}
+
+/* Cabecalho */
+.cabecalho {
+  background-image: url("../assets/images/banner-topo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 120px 80px;
+  box-sizing: border-box;
+
+  /* Logo Cabecalho */
+  .logo {
+    max-width: 250px;
+    color: var(--roxo);
+
+    .logo-div {
+      display: inline-flex;
+      gap: 5px;
+      margin-bottom: 16px;
+
+      .logo-imagem {
+        width: 30px;
+        height: 30px;
+      }
+
+      .logo-titulo {
+        font-size: 35px;
+        font-weight: 500;
+      }
+    }
+
+    .logo-paragrafo {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  /* Banner Cabecalho */
+  .banner {
+    background: var(--branco-opaco);
+    max-width: 1024px;
+    margin: auto;
+    margin-top: 70px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px var(--roxo-sombra);
+
+    .banner-subtitulo {
+      font-size: 60px;
+      font-weight: 800;
+      line-height: 75px;
+      color: var(--roxo);
+      margin-bottom: 40px;
+    }
+
+    .fale-conosco {
+      width: 200px;
+      margin: 0 auto;
+      padding: 10px 25px;
+      border-radius: 10px;
+      background-color: var(--roxo);
+      font-size: 20px;
+      color: var(--branco);
+      text-decoration: none;
+
+      &:hover {
+        background-color: var(--roxo-hover);
+        transition: 0.3s;
+      }
+    }
+
+    .logo-whatsapp {
+      width: 20px;
+    }
+  }
+}
+
+/* Main Conteudo */
+/* Servicos */
+.servicos {
+  padding: 120px 80px;
+
+  /* Servicos subtitulo */
+  .servicos-subtitulo {
+    color: var(--roxo);
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  /* Servicos Lista */
+  .servicos-lista {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    color: var(--roxo);
+
+    .lista-item {
+      font-size: 20px;
+      margin-bottom: 20px;
+
+      .lista-span {
+        font-weight: 700;
+        font-style: italic;
+      }
+    }
+  }
+
+  /* Servicos Imagens */
+  .servicos-figure {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .servicos-imagens {
+      border-radius: 5px;
+      box-shadow: 3px 6px 10px 6px var(--preto-sombra);
+    }
+  }
+}
+
+/* Contatos */
+.contatos-div {
+  padding: 120px 80px;
+  background-color: var(--roxo);
+
+  .contatos-paragrafo {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-size: 40px;
+    color: var(--branco);
+    text-align: center;
+
+    .contatos-span {
+      font-weight: 700;
+      font-style: italic;
+    }
+  }
+
+  .contatos-link-div {
+    text-align: center;
+    .contatos-link {
+      text-decoration: none;
+      text-align: center;
+
+      .contatos-imagens {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+/* Marcas */
+.marcas {
+  padding: 120px 80px;
+
+  .marcas-subtitle {
+    color: var(--roxo);
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .marcas-container {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .marcas-imagens {
+      width: 148px;
+      height: 148px;
+      margin: 0 15px;
+    }
+  }
+}
+
+/* Onde estamos */
+.onde-estamos {
+  padding: 120px 80px;
+  text-align: center;
+
+  .onde-estamos-subtitle {
+    color: var(--roxo);
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .onde-estamos-paragrafo {
+    color: var(--roxo);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  .localizacao {
+    width: 800px;
+    height: 450px;
+  }
+}
+
+/* Rodape */
+.rodape {
+  width: 100%;
+  padding: 16px 0;
+  color: var(--branco);
+  background-color: var(--roxo);
+  text-align: center;
+}
